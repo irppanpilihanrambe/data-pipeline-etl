@@ -1,8 +1,8 @@
-# 🚀 Data Pipeline ETL
+#  Data Pipeline ETL
 
 End-to-end data pipeline project using Python, Apache Spark, Apache Kafka, Apache Airflow, and dbt — running fully on-premise with Docker.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Kafka (Ingest) → Spark (Transform) → Postgres/DWH (Load) → dbt (Model) → Analytics
@@ -10,7 +10,7 @@ Kafka (Ingest) → Spark (Transform) → Postgres/DWH (Load) → dbt (Model) →
                    Airflow (Orchestrate)
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 data-pipeline-etl/
@@ -42,7 +42,7 @@ data-pipeline-etl/
 └── README.md
 ```
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Tool | Version | Purpose |
 |---|---|---|
@@ -54,7 +54,7 @@ data-pipeline-etl/
 | PostgreSQL | 15+ | Data warehouse |
 | Docker | 24+ | Containerization |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker & Docker Compose
@@ -90,7 +90,7 @@ make up
 make run-etl
 ```
 
-## 🔧 Development
+## Development
 
 ```bash
 # Install dependencies lokal
@@ -106,7 +106,7 @@ make dbt-run
 make lint
 ```
 
-## 📊 Pipeline Flow
+## Pipeline Flow
 
 1. **Ingest** — Kafka producer mengirim data ke topic
 2. **Consume** — Kafka consumer membaca dan simpan ke raw layer
@@ -114,7 +114,7 @@ make lint
 4. **Model** — dbt membuat staging dan mart models
 5. **Orchestrate** — Airflow menjadwalkan seluruh pipeline
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork repo ini
 2. Buat feature branch: `git checkout -b feature/nama-fitur`
